@@ -18,10 +18,12 @@ def main():
             if event.type == pygame.QUIT:
                 return
 
+        # Player update
+        player.update(dt)
+
         # Display background
         screen.fill("black")
         player.draw(screen)
-        player.update(dt)
         pygame.display.flip()
 
         # Limit frame rate
