@@ -21,6 +21,7 @@ def main():
         # Display background
         screen.fill("black")
         player.draw(screen)
+        player.update(dt)
         pygame.display.flip()
 
         # Limit frame rate
