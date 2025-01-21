@@ -1,6 +1,4 @@
-# this allows us to use code from
-# the open-source pygame library
-# throughout this file
+# Import all the good stuff
 import pygame
 from constants import *
 from player import Player
@@ -19,8 +17,9 @@ def main():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 return
+
         # Display background
-        screen.fill((20, 100, 200))
+        screen.fill("black")
         player.draw(screen)
         pygame.display.flip()
 
